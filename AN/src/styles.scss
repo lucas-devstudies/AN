@@ -1,0 +1,19 @@
+:root {
+  --color-primary: #67b52a;
+  --color-second: #487d1d;
+  --color-third: #1B3724;
+  --color-quaternary: #fefefe;
+
+  --color-border: #ADABAB;
+
+  --color-text: #1e1e1e;
+  --color-text-white: #e2e2e2;
+}
+
+html, body {
+  min-height: 100vh;
+  margin: 0;
+  //font-family: "Nunito", sans-serif;
+  font-style: normal;
+  color: var(--color-text);
+}

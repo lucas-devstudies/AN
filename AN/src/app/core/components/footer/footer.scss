@@ -1,0 +1,33 @@
+footer{
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.left,.right{
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.facebook:hover{
+    size: 120%;
+    transform: scale(110%);
+}
+.x:hover{
+    size: 120%;
+    transform: scale(110%);
+
+}
+.instagram:hover{
+    size: 120%;
+    transform: scale(110%);
+}
+@media(max-width:380px){
+    footer{
+        flex-direction: column;
+    }
+    .right{
+        margin-top: 2rem;
+    }
+}
