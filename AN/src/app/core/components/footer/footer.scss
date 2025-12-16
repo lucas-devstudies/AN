@@ -23,7 +23,7 @@ footer{
     size: 120%;
     transform: scale(110%);
 }
-@media(max-width:380px){
+@media(max-width:720px){
     footer{
         flex-direction: column;
     }

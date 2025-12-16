@@ -1,5 +1,5 @@
 :root {
-  --color-primary: #67b52a;
+  --color-primary: #00B500;
   --color-second: #487d1d;
   --color-third: #1B3724;
   --color-quaternary: #fefefe;
@@ -13,7 +13,7 @@
 html, body {
   min-height: 100vh;
   margin: 0;
-  //font-family: "Nunito", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-style: normal;
   color: var(--color-text);
 }
