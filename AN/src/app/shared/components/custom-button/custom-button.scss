@@ -1,0 +1,20 @@
+button{
+    width: 10rem;
+    border-radius: 2rem;
+}
+.primary{
+    background-color: var(--color-primary);
+    color: var(--color-quaternary);
+}
+.primary:active{
+    background-color: var(--color-second);
+    color: var(--color-quaternary);
+}
+.primary-outline{
+    color: var(--color-primary);
+    border: 0.01rem solid var(--color-primary);
+}
+.primary-outline:hover,.primary-outline:active{
+    background-color: var(--color-primary);
+    color: var(--color-quaternary);
+}
