@@ -1,52 +1,31 @@
-.images {
-  overflow: hidden;
+.carousel {
   width: 100%;
-  white-space: nowrap;
+  display: flex;
+  overflow-x: auto;
 }
 
-.images-slide {
-  position: relative;      /* necessário */
-  display: inline-flex;
-  gap: 2rem;
-  padding: 1rem 0;
-  animation: slide 40s linear infinite;
+.group {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  padding-right: 2em;
+  animation: slide 10s infinite linear;
 }
 
-/* Fades aplicados DIRETAMENTE na "faixa" que desliza */
-.images-slide::before,
-.images-slide::after {
-  content: "";
-  position: absolute;
-  top: 0;
-  height: 100%;
-  width: 6rem;
-  z-index: 5;               /* bem acima das imagens */
-  pointer-events: none;
+.carousel::-webkit-scrollbar{
+  display: none;
 }
 
-.images-slide::before {
-  left: 0;
-  background: linear-gradient(to right, white, transparent 70%);
+img{
+  height: 4em;
 }
 
-.images-slide::after {
-  right: 0;
-  background: linear-gradient(to left, white, transparent 70%);
-}
-
-.images-slide img {
-  height: 3rem;
-  object-fit: contain;
-  flex-shrink: 0;
-  border-radius: 300rem;
-}
-
-/* Animação */
 @keyframes slide {
   from {
     transform: translateX(0);
   }
   to {
-    transform: translateX(-20%);
+    transform: translateX(-100%);
   }
 }

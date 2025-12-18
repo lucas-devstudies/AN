@@ -5,10 +5,11 @@ import { SchoolService } from '../../core/services/school-service';
 import { School } from '../../shared/models/school';
 import { CustomButton } from "../../shared/components/custom-button/custom-button";
 import { CustomCard } from "../../shared/components/custom-card/custom-card";
+import { InfiniteSlider } from "../../shared/components/infinite-slider/infinite-slider";
 
 @Component({
   selector: 'app-home',
-  imports: [Footer, Nav, CustomButton, CustomCard],
+  imports: [Footer, Nav, CustomButton, CustomCard, InfiniteSlider],
   templateUrl: './home.html',
   styleUrl: './home.scss',
 })

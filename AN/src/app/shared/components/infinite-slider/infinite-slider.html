@@ -1,10 +1,17 @@
-<div class="images">
-    <div class="images-slide">
+<div class="carousel">
+    <div class="group">
         @for (item of items; track $index) {
             <img [src]=item.image >
         }
-        @for (item of items; track $index) {
-            <img [src]=item.image >
+    </div>
+    <div aria-hidden class="group">
+        @for (item_n of items; track $index) {
+            <img [src]=item_n.image >
+        }
+    </div>
+    <div aria-hidden class="group">
+        @for (item_n of items; track $index) {
+            <img [src]=item_n.image >
         }
     </div>
 </div>

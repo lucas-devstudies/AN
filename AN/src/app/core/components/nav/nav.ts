@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
+import { CustomButton } from "../../../shared/components/custom-button/custom-button";
 
 @Component({
   selector: 'app-nav',
-  imports: [],
+  imports: [CustomButton],
   templateUrl: './nav.html',
   styleUrl: './nav.scss',
 })

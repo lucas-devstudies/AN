@@ -9,12 +9,17 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
+          <a class="nav-link active" aria-current="page" href="#">Principal</a>
         </li>
       </ul>
-      <form class="d-flex" role="search">
-        <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Search"/>
-        <button class="btn btn-outline-success" type="submit">Buscar</button>
+      <form class="d-flex gap-3" role="search">
+        <app-custom-button
+          text="Método AN"
+          variant="primary-outline"
+        ></app-custom-button>
+        <app-custom-button
+          text="Buscar"
+        ></app-custom-button>
       </form>
     </div>
   </div>
