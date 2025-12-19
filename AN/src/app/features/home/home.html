@@ -1,11 +1,11 @@
 <div class="container-fluid">
     <app-nav  class="w-100"></app-nav>
     <section class="home"  name="trip">
-        <div class="home-content d-flex gap-3 flex-column align-items-center">
+        <div class="home-content d-flex flex-column align-items-center">
             <section class="about">
                 <div class="left">
                     <h3 class="w-100 fs-5">CENTRO EDUCACIONAL ANTONIO NERES</h3>
-                    <p class="w-100 fs-5 text-justify mt-2">Preparamos estudantes para os vestibulares em nível nacional e estadual. Honrando tudo o que  estabelecemos ao nosso alcance, sempre estimulando o melhor de nossos colaboradores, demonstrando ao longo de nossa história, que os nossos alunos podem alcançar os seus <span>sonhos</span>.</p>
+                    <p class="w-100 fs-5 text-justify mt-2 pe-1">Preparamos estudantes para os vestibulares em nível nacional e estadual. Honrando tudo o que  estabelecemos ao nosso alcance, sempre estimulando o melhor de nossos colaboradores, demonstrando ao longo de nossa história, que os nossos alunos podem alcançar os seus <span>sonhos</span>.</p>
                     <br>
                     <h3 class="w-100 fs-5">Prepare-se para o vestibular com quem aprova há mais de 20 anos</h3>
                     <div class="d-flex gap-3 pt-2 buttons">
@@ -22,7 +22,7 @@
                     <img src="../assets/alunos/aprovados-2024.avif" class="right-bg" alt="">
                 </div>
             </section>
-            <section class="cards">
+            <section class="cards mt-3">
                         <app-custom-card
                             url="/assets/icons/aprovados.svg"
                             title="+1000 aprovados"
@@ -47,10 +47,21 @@
             <section class="schools w-100 mt-4">
                 <h3 class="w-100 fs-5 text-center mb-4 py-2" style="background-color: var(--color-primary);color: var(--color-quaternary);">Aprovados em diversas universidades de todo o país</h3>
                 <app-infinite-slider
-                    [items]="lista"
+                [items]="lista"
                 ></app-infinite-slider>
+                <hr class="w-100 fs-5 text-center mt-4 pt-2 pb-0 mb-0" style="background-color: var(--color-primary);color: var(--color-quaternary);opacity: 100%;;height: 1.5rem;">
             </section>
         </div>
+    </section>
+    <section class="team w-100">
+        <h3 class="w-100 fs-4" style="color: var(--color-quaternary);">Conheça nossa equipe</h3>
+        <div class="teams w-100 d-flex gap-2 flex-wrap ">
+            @for (teacher of teachers; track $index) {
+                <app-custom-image-teacher
+                    [teacher]="teacher"
+                ></app-custom-image-teacher>
+            }
+       </div>
     </section>
     <section class="w-100 mt-4 d-flex flex-row" style="height: auto;" name="footer">
         <app-footer class="w-100"></app-footer>

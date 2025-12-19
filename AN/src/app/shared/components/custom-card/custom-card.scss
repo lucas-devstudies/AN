@@ -9,8 +9,13 @@
 }
 .card-container:hover{
     border: none;
-    box-shadow: 0 0 0.2rem #c73c3c;
+    box-shadow: 0 0 0.2rem var(--color-primary);
 }
 p{
     text-align: justify;
+}
+@media (max-width:480px){
+    .card-container{
+        height: 16rem;
+    }
 }
