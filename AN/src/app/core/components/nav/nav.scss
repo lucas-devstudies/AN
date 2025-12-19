@@ -15,7 +15,8 @@
 }
 .container-fluid{
     max-width: 1980px;
-    margin: auto 1.5rem;
+    margin: auto 2rem;
+    padding: 0;
 }
 .dropdown-toggle::after {
   display: none !important;
@@ -30,8 +31,5 @@ a{
     .itens{
         flex-direction: column;
         max-width: 8rem;
-    }
-    .container-fluid{
-        margin: auto 1.5rem;
     }
 }
